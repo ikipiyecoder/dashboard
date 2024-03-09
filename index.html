@@ -191,32 +191,32 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up mailbox"
                     aria-labelledby="drop2">
-                    <div class="d-flex border-bottom align-items-center justify-content-between py-3 px-4">
-                      <h5 class="mb-0 fs-4 text-dark">You have 4 new messages</h5>
-                    </div>
-                    <div class="message-body" data-simplebar>
-                      <a href="javascript:void(0)" class="p-3 pe-0 d-flex align-items-center dropdown-item gap-3 border-bottom">
-                        <span class="user-img position-relative d-inline-block">
-                          <img src="./assets/images/profile/user-2.jpg" alt="user" class="rounded-circle w-100 round-40" />
-                          <span class="profile-status bg-success position-absolute rounded-circle"></span>
-                        </span>
-                        <div class="w-75 d-inline-block v-middle">
-                          <div class="d-flex align-items-center justify-content-between">
-                            <h6 class="mb-0 lh-base">Mathew Anderson</h6>
-                            <span class="fs-2 text-nowrap d-block subtext">9:30 AM</span>
+                      <div class="d-flex border-bottom align-items-center justify-content-between py-3 px-4">
+                        <h5 class="mb-0 fs-4 text-dark">You have 4 new messages</h5>
+                      </div>
+                      <div class="message-body" data-simplebar>
+                        <a href="javascript:void(0)" class="p-3 pe-0 d-flex align-items-center dropdown-item gap-3 border-bottom">
+                          <span class="user-img position-relative d-inline-block">
+                            <img src="./assets/images/profile/user-2.jpg" alt="user" class="rounded-circle w-100 round-40" />
+                            <span class="profile-status bg-success position-absolute rounded-circle"></span>
+                          </span>
+                          <div class="w-75 d-inline-block v-middle">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <h6 class="mb-0 lh-base">Mathew Anderson</h6>
+                              <span class="fs-2 text-nowrap d-block subtext">9:30 AM</span>
+                            </div>
+                            <span class="fs-2 d-block text-truncate text-truncate">Just see the my new admin!</span>
                           </div>
-                          <span class="fs-2 d-block text-truncate text-truncate">Just see the my new admin!</span>
-                        </div>
-                      </a>
+                        </a>
+                      </div>
+                      <div>
+                        <a class="d-flex align-items-center pt-3 pb-2 justify-content-center text-dark" href="javascript:void(0);">
+                          <span class="fw-semibold">See all e-Mails</span>
+                          <iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon>
+                        </a>
+                      </div>
                     </div>
-                    <div>
-                      <a class="d-flex align-items-center pt-3 pb-2 justify-content-center text-dark" href="javascript:void(0);">
-                        <span class="fw-semibold">See all e-Mails</span>
-                        <iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon>
-                      </a>
-                    </div>
-                  </div>
-                </li>
+                  </li>
 
                 <li class="nav-item hover-dd dropdown">
                   <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" aria-expanded="false">
@@ -404,11 +404,39 @@
     $("html").attr("data-color-theme", e);
     $(e).prop("checked", !0);
   }
+
+  function openChats()
+  {
+    if(document.getElementById('noted').value == "") {
+      document.getElementById('noted').value = "show";
+      document.getElementById("chats").style.display = "block";
+    } else {
+      document.getElementById('noted').value = "";
+      document.getElementById("chats").style.display = "none";
+    }
+  
+  }
 </script>
 <button class="btn btn-info p-3 rounded-circle d-flex align-items-center justify-content-center customizer-btn btn-chat"
-type="button" >
+type="button" onclick="openChats()">
 <span class="humbleicons--chat"></span>
 </button>
+
+<div id="chats" class="align-items-center justify-content-center customizer-btn chat-style">
+  <div class=" border-bottom align-items-center justify-content-between py-3 px-4 title">
+    <h6 class="mb-0 fs-3 text-dark no-padding">
+      <b>Hi Dear,</b><br>
+      How can we help you today?
+    </h6>
+  </div>
+  <div class="">
+    <textarea class="form-control" name="message" id="message" rows="5" cols="10" placeholder="Write Text"></textarea>
+  </div>
+  <div class="top10">
+    <input type="text" id="noted" class="form-control hidden" readonly>
+    <button class="btn btn-primary" style="float: right;"> Send Message </button>
+  </div>
+</div>
 
 <div class="offcanvas customizer offcanvas-end" tabindex="-1" id=""
 aria-labelledby="offcanvasExampleLabel">
