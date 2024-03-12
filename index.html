@@ -5,24 +5,25 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./assets/images/logos/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="./assets/images/logos/instand-dark.png" />
 
   <link rel="stylesheet" href="./assets/css/styles.css" />
-  <title>Monster Bootstrap Admin</title>
+  <title>Instand</title>
   <link rel="stylesheet" href="./assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" />
 </head>
 
 <body>
   <div class="preloader">
-    <img src="./assets/images/logos/favicon.png" alt="loader" class="lds-ripple img-fluid" />
+    <img src="./assets/images/logos/instand-dark.png" alt="loader" class="lds-ripple img-fluid" />
   </div>
   <div id="main-wrapper">
     <aside class="left-sidebar with-vertical" style="background: #3086ce; color: white;">
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="../main/index.html" class="text-nowrap logo-img">
-            <img src="./assets/images/logos/dark-logo.svg" class="dark-logo" alt="Logo-Dark" />
-            <img src="./assets/images/logos/light-logo.svg" class="light-logo" alt="Logo-light" />
+            <!-- <img src="./assets/images/logos/instand-dark.png" class="dark-logo" alt="Logo-Dark" width="30px" /> -->
+            <img src="./assets/images/logos/instand-light.png" class="dark-logo" alt="Logo-light" width="25px" />
+            <b class="text-white logos">Instand</b>
           </a>
           <a href="javascript:void(0)" class="sidebartoggler ms-auto text-decoration-none fs-5 d-flex d-xl-none">
             <iconify-icon icon="solar:close-circle-outline"></iconify-icon>
@@ -169,7 +170,8 @@
             </ul>
 
             <div class="d-block d-lg-none">
-              <img src="./assets/images/logos/light-logo.svg" class="" width="180" alt="" />
+              <img src="./assets/images/logos/instand-light.png" class="" width="30px" alt="" />
+              <b class="text-white logos">Instand</b>
             </div>
 
             <a class="navbar-toggler border-0 text-white nav-icon-hover" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -217,190 +219,267 @@
                       </div>
                     </div>
                   </li>
-
-                <li class="nav-item hover-dd dropdown">
-                  <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" aria-expanded="false">
-                    <iconify-icon icon="solar:bell-linear"></iconify-icon>
-                    <div class="notify">
-                      <span class="heartbit"></span> <span class="point"></span>
+                  <li class="nav-item hover-dd dropdown">
+                    <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" aria-expanded="false">
+                      <iconify-icon icon="solar:bell-linear"></iconify-icon>
+                      <div class="notify">
+                        <span class="heartbit"></span> <span class="point"></span>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up mailbox"
+                    aria-labelledby="drop2">
+                      <div class="d-flex border-bottom align-items-center justify-content-between py-3 px-4">
+                        <div class="mb-0 fs-4 text-dark">Notifications</div>
+                      </div>
+                      <div class="message-body" data-simplebar>
+                        <a href="javascript:void(0)" class="p-3 pe-0 d-flex align-items-center dropdown-item gap-3 border-bottom">
+                          <span class="flex-shrink-0 bg-danger-subtle rounded-circle round d-flex align-items-center justify-content-center fs-6 text-danger">
+                            <iconify-icon icon="solar:widget-3-linear"></iconify-icon>
+                          </span>
+                          <div class="w-75 d-inline-block v-middle">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <h6 class="mb-0 lh-base">Luanch Admin</h6>
+                              <span class="fs-2 text-nowrap d-block subtext">9:30 AM</span>
+                            </div>
+                            <span class="fs-2 d-block text-truncate text-truncate">Just see the my new admin!</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div>
+                        <a class="d-flex align-items-center pt-3 pb-2 justify-content-center text-dark" href="javascript:void(0);">
+                          <span class="fw-semibold">Check all notifications</span>
+                          <iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon>
+                        </a>
+                      </div>
                     </div>
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up mailbox"
-                  aria-labelledby="drop2">
-                  <div class="d-flex border-bottom align-items-center justify-content-between py-3 px-4">
-                    <div class="mb-0 fs-4 text-dark">Notifications</div>
-                  </div>
-                  <div class="message-body" data-simplebar>
-                    <a href="javascript:void(0)" class="p-3 pe-0 d-flex align-items-center dropdown-item gap-3 border-bottom">
-                      <span class="flex-shrink-0 bg-danger-subtle rounded-circle round d-flex align-items-center justify-content-center fs-6 text-danger">
-                        <iconify-icon icon="solar:widget-3-linear"></iconify-icon>
-                      </span>
-                      <div class="w-75 d-inline-block v-middle">
-                        <div class="d-flex align-items-center justify-content-between">
-                          <h6 class="mb-0 lh-base">Luanch Admin</h6>
-                          <span class="fs-2 text-nowrap d-block subtext">9:30 AM</span>
+                  </li>
+                  <li class="nav-item hover-dd dropdown">
+                    <a class="nav-link" href="javascript:void(0)" id="drop1" aria-expanded="false">
+                      <div class="d-flex align-items-center">
+                        <div class="user-profile-img">
+                          <img src="./assets/images/profile/user-1.jpg" class="rounded-circle" width="30" height="30"
+                          alt="" />
                         </div>
-                        <span class="fs-2 d-block text-truncate text-truncate">Just see the my new admin!</span>
                       </div>
                     </a>
-                  </div>
-                  <div>
-                    <a class="d-flex align-items-center pt-3 pb-2 justify-content-center text-dark" href="javascript:void(0);">
-                      <span class="fw-semibold">Check all notifications</span>
-                      <iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon>
-                    </a>
-                  </div>
-                </div>
-              </li>
 
-              <li class="nav-item hover-dd dropdown">
-                <a class="nav-link" href="javascript:void(0)" id="drop1" aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <div class="user-profile-img">
-                      <img src="./assets/images/profile/user-1.jpg" class="rounded-circle" width="30" height="30"
-                      alt="" />
-                    </div>
-                  </div>
-                </a>
-
-                <div class="dropdown-menu dropdown-menu-end content-dd dropdown-menu-animate-up user-dd"
-                aria-labelledby="drop1">
-                <div class="profile-dropdown position-relative" data-simplebar>
-                  <div class="py-3 px-7 pb-0">
-                    <h5 class="mb-0 fs-5">User Profile</h5>
-                  </div>
-                  <div class="d-flex align-items-center py-9 mx-7 border-bottom">
-                    <img src="./assets/images/profile/user-1.jpg" class="rounded-circle" width="80" height="80" alt="" />
-                    <div class="ms-3">
-                      <h5 class="mb-1 fs-4">Markarn Doe</h5>
-                      <span class="mb-1 d-block">Designer</span>
-                      <p class="mb-0 d-flex align-items-center gap-2">
-                        <i class="ti ti-mail fs-4"></i> info@monster.com
-                      </p>
-                    </div>
-                  </div>
-                  <div class="message-body">
-                    <a href="#" class="py-8 px-7 mt-8 d-flex align-items-center">
-                      <span class="d-flex align-items-center justify-content-center bg-info-subtle rounded p-6 fs-7 text-info">
-                        <iconify-icon icon="solar:user-circle-line-duotone"></iconify-icon>
-                      </span>
-                      <div class="w-75 d-inline-block v-middle ps-3">
-                        <h6 class="mb-1 fs-3 lh-base">My Profile</h6>
-                        <span class="fs-2 d-block text-body-secondary">Account Settings</span>
+                    <div class="dropdown-menu dropdown-menu-end content-dd dropdown-menu-animate-up user-dd"
+                    aria-labelledby="drop1">
+                      <div class="profile-dropdown position-relative" data-simplebar>
+                        <div class="py-3 px-7 pb-0">
+                          <h5 class="mb-0 fs-5">User Profile</h5>
+                        </div>
+                        <div class="d-flex align-items-center py-9 mx-7 border-bottom">
+                          <img src="./assets/images/profile/user-1.jpg" class="rounded-circle" width="80" height="80" alt="" />
+                          <div class="ms-3">
+                            <h5 class="mb-1 fs-4">Markarn Doe</h5>
+                            <span class="mb-1 d-block">Designer</span>
+                            <p class="mb-0 d-flex align-items-center gap-2">
+                              <i class="ti ti-mail fs-4"></i> info@monster.com
+                            </p>
+                          </div>
+                        </div>
+                        <div class="message-body">
+                          <a href="#" class="py-8 px-7 mt-8 d-flex align-items-center">
+                            <span class="d-flex align-items-center justify-content-center bg-info-subtle rounded p-6 fs-7 text-info">
+                              <iconify-icon icon="solar:user-circle-line-duotone"></iconify-icon>
+                            </span>
+                            <div class="w-75 d-inline-block v-middle ps-3">
+                              <h6 class="mb-1 fs-3 lh-base">My Profile</h6>
+                              <span class="fs-2 d-block text-body-secondary">Account Settings</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid py-4 px-7 pt-8">
+                          <a href="#" class="btn btn-info">Log Out</a>
+                        </div>
                       </div>
-                    </a>
-                  </div>
-                  <div class="d-grid py-4 px-7 pt-8">
-                    <a href="#" class="btn btn-info">Log Out</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div class="body-wrapper">
+        <div class="container-fluid">
+          <div class="d-md-flex align-items-center justify-content-between mb-7">
+            <div class="mb-4 mb-md-0">
+              <h4 class="fs-6 mb-0">Ratu Cafe</h4>
+            </div>
+            <div class="d-flex align-items-center justify-content-between gap-6">
+              <button class="btn btn-primary bgStyle">
+                <i class="ti ti-calendar fs-4"></i>
+                01 January 2023 - 01 January 2023
+              </button>
+              <button class="btn btn-primary bgStyle d-flex align-items-center gap-1 fs-3 py-2 px-9">
+                All Outlet
+              </button>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 top10">
+              <label class="bot5">Total revenue for today</label>
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <div class="box-content">
+                    <span class="totals">RP. 10,000,000.-</span><br>
+                    <img src="./assets/images/logos/trend.png" alt="Logo-light" width="10px" />
+                    <span class="details"> Higher 10% then last day</span>
                   </div>
                 </div>
               </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-</header>
+            </div>
+            <div class="col-lg-6 col-md-6 top10">
+              <label class="bot5">Total profit for today</label>
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <div class="box-content">
+                    <span class="totals">RP. 4,000,000.-</span><br>
+                    <img src="./assets/images/logos/trend.png" alt="Logo-light" width="10px" />
+                    <span class="details"> Higher 2% then last day</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 top15">
+              <label class="bot5">Product sold today</label>
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <div class="box-content2">
+                    <span class="totals">RP. 4,000,000.-</span><br>
+                    <img src="./assets/images/logos/trend.png" alt="Logo-light" width="10px" />
+                    <span class="details"> Higher 10% then last day</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 top15">
+              <label class="bot5">Services served today</label>
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <div class="box-content2">
+                    <span class="totals">RP. 6,000,000.-</span><br>
+                    <img src="./assets/images/logos/red.png" alt="Logo-light" width="10px" />
+                    <span class="details"> Lower 10% then last day</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-<div class="body-wrapper">
-  <div class="container-fluid">
-    <div class="d-md-flex align-items-center justify-content-between mb-7">
-      <div class="mb-4 mb-md-0">
-        <h4 class="fs-6 mb-0">Dashboard</h4>
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb mb-0">
-            <li class="breadcrumb-item">
-              <a class="text-muted text-decoration-none" href="../main/index.html">Home</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-          </ol>
-        </nav>
-      </div>
-      <div class="d-flex align-items-center justify-content-between gap-6">
-        <select class="form-select border fs-3" aria-label="Default select example">
-          <option selected>November 2023</option>
-          <option value="1">February 2023</option>
-          <option value="2">March 2023</option>
-          <option value="3">April 2023</option>
-        </select>
-        <button class="btn btn-success d-flex align-items-center gap-1 fs-3 py-2 px-9">
-          <i class="ti ti-plus fs-4"></i>
-          Create
-        </button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title fs-4 fw-normal mb-3">Daily Sales</h4>
-            <h2 class="mb-3 fs-9 fw-light">$56,908</h2>
-            <div class="d-flex align-items-center gap-2 mb-3">
-              <i class="fas fa-caret-down text-warning fs-5"></i>
-              <span class="text-muted fs-3 fw-bold">$45,987</span>
-            </div>
-            <div class="progress bg-warning-subtle" style="height: 4px">
-              <div class="progress-bar w-70 text-bg-warning" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title fs-4 fw-normal mb-3">Electric Usage</h4>
-            <h2 class="mb-3 fs-9 fw-light">10.578 <span class="fs-5 fw-bold">Kwh</span></h2>
-            <div class="d-flex align-items-center gap-2 mb-3">
-              <i class="fas fa-caret-up text-indigo fs-5"></i>
-              <span class="text-muted fs-3 fw-bold">567 Kwh</span>
-            </div>
-            <div class="progress bg-indigo-subtle" style="height: 4px">
-              <div class="progress-bar w-70 text-bg-secondary" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title fs-4 fw-normal mb-3">Internet Bandwidth</h4>
-            <h2 class="mb-3 fs-9 fw-light">14.897 <span class="fs-5 fw-bold">Gb</span></h2>
-            <div class="d-flex align-items-center gap-2 mb-3">
-              <i class="fas fa-caret-down text-danger fs-5"></i>
-              <span class="text-muted fs-3 fw-bold">467 Gb</span>
-            </div>
-            <div class="progress bg-danger-subtle" style="height: 4px">
-              <div class="progress-bar w-70 text-bg-danger" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title fs-4 fw-normal mb-3">Total Profit</h4>
-            <h2 class="mb-3 fs-9 fw-light">$995,204</h2>
-            <div class="d-flex align-items-center gap-2 mb-3">
-              <i class="fas fa-caret-up text-success fs-5"></i>
-              <span class="text-muted fs-3 fw-bold">$45,987</span>
-            </div>
-            <div class="progress bg-success-subtle" style="height: 4px">
-              <div class="progress-bar w-70 text-bg-success" role="progressbar" aria-valuenow="70"
-              aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-lg-6 col-md-6 top15">
+              <label class="bot5">Best selling products</label>
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <div class="box-content2">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 banners">
+                        <img src="./assets/images/banner/nasi goreng.png" alt="Logo-light" width="100%" />
+                      </div>
+                      <div class="col-lg-9 col-md-9 v-middle">
+                        <span class="v-middle">Nasi Goreng</span><br>
+                        <img src="./assets/images/logos/trend.png" class="img-responsive v-middle" alt="Logo-light" width="10px" />
+                        <span class="details v-middle"> Lower 10% then last day</span>s
+                      </div>
+                    </div>
 
-  </div>
-</div>
+                    <div class="row top15">
+                      <div class="col-lg-3 col-md-3 banners">
+                        <img src="./assets/images/banner/nasi goreng.png" alt="Logo-light" width="100%" />
+                      </div>
+                      <div class="col-lg-9 col-md-9 v-middle">
+                        <span class="v-middle">Nasi Goreng</span><br>
+                        <img src="./assets/images/logos/trend.png" class="img-responsive v-middle" alt="Logo-light" width="10px" />
+                        <span class="details v-middle"> Lower 10% then last day</span>s
+                      </div>
+                    </div>
+
+                    <div class="row top15">
+                      <div class="col-lg-3 col-md-3 banners">
+                        <img src="./assets/images/banner/nasi goreng.png" alt="Logo-light" width="100%" />
+                      </div>
+                      <div class="col-lg-9 col-md-9 v-middle">
+                        <span class="v-middle">Nasi Goreng</span><br>
+                        <img src="./assets/images/logos/trend.png" class="img-responsive v-middle" alt="Logo-light" width="10px" />
+                        <span class="details v-middle"> Lower 10% then last day</span>s
+                      </div>
+                    </div>
+
+                    <div class="row top15">
+                      <div class="col-lg-3 col-md-3 banners">
+                        <img src="./assets/images/banner/nasi goreng.png" alt="Logo-light" width="100%" />
+                      </div>
+                      <div class="col-lg-9 col-md-9 v-middle">
+                        <span class="v-middle">Nasi Goreng</span><br>
+                        <img src="./assets/images/logos/trend.png" class="img-responsive v-middle" alt="Logo-light" width="10px" />
+                        <span class="details v-middle"> Lower 10% then last day</span>s
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 top15">
+              <label class="bot5">Best selling services</label>
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <div class="box-content2">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 banners">
+                        <img src="./assets/images/banner/dinner.png" alt="Logo-light" width="100%" />
+                      </div>
+                      <div class="col-lg-9 col-md-9 v-middle">
+                        <span class="v-middle">Candle Light Dinner Package</span><br>
+                        <img src="./assets/images/logos/trend.png" class="img-responsive v-middle" alt="Logo-light" width="10px" />
+                        <span class="details v-middle"> Lower 10% then last day</span>s
+                      </div>
+                    </div>
+                    <div class="row top15">
+                      <div class="col-lg-3 col-md-3 banners">
+                        <img src="./assets/images/banner/dinner.png" alt="Logo-light" width="100%" />
+                      </div>
+                      <div class="col-lg-9 col-md-9 v-middle">
+                        <span class="v-middle">Candle Light Dinner Package</span><br>
+                        <img src="./assets/images/logos/trend.png" class="img-responsive v-middle" alt="Logo-light" width="10px" />
+                        <span class="details v-middle"> Lower 10% then last day</span>s
+                      </div>
+                    </div>
+                    <div class="row top15">
+                      <div class="col-lg-3 col-md-3 banners">
+                        <img src="./assets/images/banner/dinner.png" alt="Logo-light" width="100%" />
+                      </div>
+                      <div class="col-lg-9 col-md-9 v-middle">
+                        <span class="v-middle">Candle Light Dinner Package</span><br>
+                        <img src="./assets/images/logos/trend.png" class="img-responsive v-middle" alt="Logo-light" width="10px" />
+                        <span class="details v-middle"> Lower 10% then last day</span>s
+                      </div>
+                    </div>
+                    <div class="row top15">
+                      <div class="col-lg-3 col-md-3 banners">
+                        <img src="./assets/images/banner/dinner.png" alt="Logo-light" width="100%" />
+                      </div>
+                      <div class="col-lg-9 col-md-9 v-middle">
+                        <span class="v-middle">Candle Light Dinner Package</span><br>
+                        <img src="./assets/images/logos/trend.png" class="img-responsive v-middle" alt="Logo-light" width="10px" />
+                        <span class="details v-middle"> Lower 10% then last day</span>s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
+
   function handleColorTheme(e) {
     $("html").attr("data-color-theme", e);
     $(e).prop("checked", !0);
@@ -418,20 +497,21 @@
   
   }
 </script>
-<button class="btn btn-info p-3 rounded-circle d-flex align-items-center justify-content-center customizer-btn btn-chat"
-type="button" onclick="openChats()">
+<a class="btn btn-info p-3 rounded-circle d-flex align-items-center justify-content-center customizer-btn btn-chat" onclick="openChats()">
 <span class="humbleicons--chat"></span>
-</button>
+</a>
 
 <div id="chats" class="align-items-center justify-content-center customizer-btn chat-style">
   <div class=" border-bottom align-items-center justify-content-between py-3 px-4 title">
-    <h6 class="mb-0 fs-3 text-dark no-padding">
-      <b>Hi Dear,</b><br>
-      How can we help you today?
+    <img src="./assets/images/logos/instand-dark.png" class="dark-logo" alt="Logo-light" width="25px" />
+    <b class="logos-chats">Instand</b>s
+    <h6 class="mb-0 text-dark no-padding font11 top15">
+      <b>Hi There,</b><br>
+      <span>How can we help you today?</span>
     </h6>
   </div>
   <div class="">
-    <textarea class="form-control" name="message" id="message" rows="5" cols="10" placeholder="Write Text"></textarea>
+    <textarea class="form-control" name="message" id="message" rows="3" cols="10" placeholder="Write Text"></textarea>
   </div>
   <div class="top10">
     <input type="text" id="noted" class="form-control hidden" readonly>
