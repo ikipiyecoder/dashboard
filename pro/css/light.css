@@ -29,11 +29,24 @@
 	background: #3086ce !important; 
 	color: white !important;
  }
+
+ .dropdown-menu-end[data-bs-popper]{
+	border-radius: 15px;
+ }
  
+ .list-group-item,
+ .dropdown-menu-header{
+	border: none !important;
+ }
+
+ .list-group-item:hover{
+	background: white !important; 
+ }
 
  .hamburger, .hamburger:after, .hamburger:before,
  .hamburger:hover,
- .content{
+ .content,
+ .box-content3{
 	background: white;
  }
 
@@ -142,7 +155,8 @@
  }
 
  .box-content,
-.box-content2{
+.box-content2,
+.box-content3{
   border-radius: 15px;
   padding: 15px;
   border: 1px solid #c1bebe;
@@ -257,3 +271,79 @@
 	display: block !important;
 }
 
+.modal-header,
+.setCenter{
+	display: block; 
+	margin: 0 auto;
+}
+
+.fixedStyle{
+	position: fixed;
+    right: 15px;
+    top: 15px;
+}
+
+.list-group{
+	text-align: left !important;
+}
+
+.bg-edit{
+	background: #eaf3fa !important;
+	font-weight: bold;
+}
+
+.user-photos{
+	width: 120px;
+	height: 120px;
+	border: 4px solid #3086ce;
+}
+
+.avatar{
+	border: 2px solid white;
+}
+
+.f-11{
+	font-size: 11px !important;
+}
+
+.f-12{
+	font-size: 12px !important;
+}
+
+.nav-link{
+	color : #184265 !important;
+}
+
+.tabStyle a.active{
+	font-weight: bold;
+}
+
+.ver-style{
+	background: #1cc600;
+	color: white;
+	border-radius: 15px;
+	padding: 3px 15px;
+	margin-left: 15px;
+}
+
+.left20{
+	margin-left: 20px;	
+}
+
+.left15{
+	margin-left: 15px;	
+}
+
+.see-details{
+	text-align: right;
+	vertical-align: middle;
+}
+
+.see-details a,
+.setA{
+	text-decoration: none !important;
+}
+
+.setA{
+	color: black !important;
+}
